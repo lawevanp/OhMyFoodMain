@@ -2,70 +2,116 @@ $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 
-.header { 
+html {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.header {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    padding-top: 10px;
+    font-size: xx-large;
     &__heading {
+        text-align: center;
         &--image {
-            width: auto;
+            width: 50%;
         }
     }
+
     &__card {
         background-color: #f2f2f2;
-        justify-content: center;
-
+        text-align: center;
+        padding-bottom: 50px;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 10px;
         &--location {
-            justify-content: center;
+            text-align: center;
         }
+
         &--title {
             font-weight: bold;
-            justify-content: center;
         }
+
         &--subtitle {
-            justify-content: center;
         }
+
         &--button {
-            justify-content: center;
-            & > button {
+            margin-top: 20px;
+            &>button {
                 background-color: $color-primary;
+                color: white;
+                padding: 10px;
+                border-radius: 200px;
+                border-width: 0px;
+                font-size: xx-large;
             }
         }
     }
 }
+
 .instructions {
-    &__heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: xx-large;
+    &__heading {}
 
-    }
     &__card {
-
-    }
-}
-.restaurants {
-    width: 100%;
-    background-color: #f2f2f2;
-    &__heading{
-
-    }
-    &__card{
+        background-color: #f2f2f2;
+        border-radius: 200px;
+        padding: 15px;
+        margin: 20px;
         display: flex;
         flex-direction: column;
-        width: auto;
-        margin: 10px;
+        flex-wrap: wrap;
+        width: 50%;
+    }
+}
+
+.restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color: #f2f2f2;
+    margin-top: 15px;
+    font-size: xx-large;
+    justify-content: center;
+    &__heading {
+
+    }
+
+    &__card {
+        display: flex;
+        flex-direction: column;
+        width: 90%;
         background-color: white;
+        margin-bottom: 30px;
+        padding-bottom: 18px;
+        text-indent: 15px;
+        border-radius: 25px;
+
         &--image {
             object-fit: cover;
-            height: 300px;
+            height: 600px;
+            border-top-left-radius: 25px;
+            border-top-right-radius: 25px;
         }
     }
 }
-.footer {
-    &__heading {
-        &--image{
-            
-        }
-    }
-    &__link {
 
+.footer {
+    background-color: #353535;
+    font-size: medium;
+    padding: 15px;
+    &__heading {
+        &--image {}
+    }
+
+    &__link {
+        padding: 5px;
+        color: white;
     }
 }
