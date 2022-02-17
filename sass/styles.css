@@ -1,0 +1,45 @@
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.header__heading--image {
+  width: auto;
+}
+.header__card {
+  background-color: #f2f2f2;
+  justify-content: center;
+}
+.header__card--location {
+  justify-content: center;
+}
+.header__card--title {
+  font-weight: bold;
+  justify-content: center;
+}
+.header__card--subtitle {
+  justify-content: center;
+}
+.header__card--button {
+  justify-content: center;
+}
+.header__card--button > button {
+  background-color: #9356DC;
+}
+
+.restaurants {
+  width: 100%;
+  background-color: #f2f2f2;
+}
+.restaurants__card {
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  margin: 10px;
+  background-color: white;
+}
+.restaurants__card--image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 300px;
+}/*# sourceMappingURL=styles.css.map */

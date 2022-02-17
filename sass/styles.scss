@@ -1,0 +1,71 @@
+$color-primary: #9356DC;
+$color-secondary: #FF79DA;
+$color-tertiary: #99E2D0;
+
+.header { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    &__heading {
+        &--image {
+            width: auto;
+        }
+    }
+    &__card {
+        background-color: #f2f2f2;
+        justify-content: center;
+
+        &--location {
+            justify-content: center;
+        }
+        &--title {
+            font-weight: bold;
+            justify-content: center;
+        }
+        &--subtitle {
+            justify-content: center;
+        }
+        &--button {
+            justify-content: center;
+            & > button {
+                background-color: $color-primary;
+            }
+        }
+    }
+}
+.instructions {
+    &__heading {
+
+    }
+    &__card {
+
+    }
+}
+.restaurants {
+    width: 100%;
+    background-color: #f2f2f2;
+    &__heading{
+
+    }
+    &__card{
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        margin: 10px;
+        background-color: white;
+        &--image {
+            object-fit: cover;
+            height: 300px;
+        }
+    }
+}
+.footer {
+    &__heading {
+        &--image{
+            
+        }
+    }
+    &__link {
+
+    }
+}
